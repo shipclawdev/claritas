@@ -1018,15 +1018,15 @@
                 transform: translateY(-50%);
             }
             .nav-controls {
+                display: none;
                 position: fixed;
                 top: 0;
-                right: -280px;
+                right: 0;
                 width: 280px;
                 height: 100vh;
                 background: var(--bg-card);
                 backdrop-filter: blur(20px);
                 -webkit-backdrop-filter: blur(20px);
-                display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: stretch;
@@ -1034,9 +1034,8 @@
                 gap: 0;
                 z-index: 99;
                 box-shadow: -4px 0 24px rgba(0,0,0,0.1);
-                transition: right 0.3s ease;
             }
-            .nav-controls.open { right: 0; }
+            .nav-controls.open { display: flex; }
             .nav-links {
                 flex-direction: column;
                 gap: 0.25rem;
